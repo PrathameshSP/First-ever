@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta  name="description" content="Form">
+<meta name="keywords" content="Personal info"> 
+</head>
+<style>
+    body {background-color:lavender;}
+</style>
+
+<body>
+    <h2 style="text-align:center;">Form</h2>
+    <form action="form.php" method="post" >
+        <fieldset>
+        <legend>Personal info</legend><br>
+
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" maxlength="3" size="3"><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="Other">
+        <label for="gender">Other</label><br><br>
+
+        <label for="number">Contact Number: +91</label>
+        <input type="tel" id="number" name="number" placeholder="0123456789" maxlength="10">
+
+        <label for="mail">&emsp;Email id:</label>
+        <input type="email" id="mail" name="mail"><br><br><br>
+
+        <label for="hobby">Hobby:</label>
+        <select id="hobby" name="hobby[]" multiple>
+            <option value="Singing">Singing</option>
+            <option value="Dancing">Dancing</option>
+            <option value="Sports">Sports</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Reading">Reading</option>
+            <option value="Writing">Writing</option>
+            <option value="Exercise">Exercise</option>
+            <option value="Watching Movies">Watching Movies</option>
+            <option value="Coding">Coding</option>
+        </select>
+        <small>Can select Multiple hobbies.*</small><br><br>
+
+        <label for="identity">Upload Aadhaar Card:</label>
+        <input type="file" id="identity" name="identity"><br><br>
+
+        <input type="submit" value="Submit Form">
+
+        </fieldset>
+    </form>
+</body>
+</html>

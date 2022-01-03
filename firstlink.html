@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> First Link</title>
+<style>
+
+body {background-color:gray;}
+p    {color: black;font-size:20px;}
+
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Links</h1>
+<br><br>
+<a href="https://www.cricbuzz.com">Cricbuzz</a><hr>
+
+<p>The below link is opened in new window or tab in the browser.</p>
+<a href="https://www.cricbuzz.com" target="_blank">Cricbuzz</a><br><br><hr>
+
+<p>The below link is parent link.</p>
+<a href="https://www.cricbuzz.com" target="_parent">Cricbuzz</a><br><br><hr>
+
+<p>The below link is top link.</p>
+<a href="https://www.cricbuzz.com" target="_top">Cricbuzz</a><br><br><hr>
+
+<p>This is an image link.</p>
+<a href="https://www.cricbuzz.com" target="_blank">
+<img src="cricbuzz logo.png" alt="Cricbuzz" style="width:75px;height:75px;"></a><br><br><hr>
+
+<p>The below is link to sending an email to me.</p>
+<a href="mailto:patil1025psp@gmail.com" target="_blank">
+<img src="email logo.jpg" alt="E-mail" style="width:75px;height:75px;"></a><br><br><hr>
+
+<p>Click on the button.</p>
+<button onclick="document.location='https://www.cricbuzz.com'">Cricbuzz</button><br><br><hr> 
+
+<p>This is a button link styled using CSS and the hover effect is added using Javascript.</p>
+<a id="hover" onmouseover="hoverf()" onmouseout="hoverf2()" href="https://www.cricbuzz.com" 
+style="background-color:tomato;color:white;padding:10px 15px;text-align:center;text-decoration:none;
+display:inline-block;"><b>Cricbuzz</b></a><br><br><hr>
+
+<script>
+
+function hoverf() {
+document.getElementById("hover").style.backgroundColor="black";
+}
+
+function hoverf2() {
+document.getElementById("hover").style.backgroundColor="tomato";
+}
+
+</script>
+
+
+
+
+<!--Above I have a created a link styled with CSS making it look as a orange button.The mouse hover effect is also added 
+with the help of Javascript and id.First I styled the link and then gave a unique id ("hover" in this case) to the link.After which 
+I created two Javascript events "onmouseover" and "onmouseout" with the function name(of my choice) "hoverf()" and "hoverf2()" respectively.
+Then calling the function and the id name in the script element styled the hover effect. The hover effect can also be added
+directly using id(e.g #idname:hover{style elements})but since we have added style in the <a> element it will overide the styling in the 
+head section and the effect won't show.--> 
+
+</body>	
+</html>
